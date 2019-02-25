@@ -14,6 +14,8 @@ This app is a program that cracks SHA1 hashes as well as salted word hashes.  wr
 ## 🏎 Getting up and Running
 
 > You can access this program by cloning the repo to your local machine via SSH.
+**IMPORTANT**
+> Your sysargv[1] is the input hash and your sysargv[2] is your salt term.
 
 ## Project components
 
@@ -31,18 +33,28 @@ import sys
 import time
 ```
 
-### The code and what is going on
+### Breaking down the code
+1. Establish variables that track the time and amount of times it takes to find the solved hash.
 
 ```python
 # Time tracking variables
 counter = 0
 start_time = time.time()
 
+# for args in sys.argv
+# inputhash = sys.argv[1]
+# salt = sys.argv[2]
+```
+
+2. Open the file and put each word in their own index, removing beginning and trailing characters.
+```python
 # Opening the files
 with open("./pwdlist.txt", 'r') as f:
     pwdlist = [eachline.strip() for eachline in f]
+```
 
-# cracking the hashes
+3. If there are only two system args, filename and input hash, then run this code.
+```python
 if len(sys.argv) == 2:
     for pwd in pwdlist:
         hashdpwd = hashlib.sha1(pwd).hexdigest()
@@ -54,6 +66,10 @@ if len(sys.argv) == 2:
             continue
     print "It took " + str(time.time()-start_time) + " seconds long and " +str(counter) + " many tries to find this.\n"
     quit()
+```
+
+4. If there are three system args, filename, input hash, and salt, then run this code.
+```python
 elif len(sys.argv) == 3:
     for pwd in pwdlist:
         hashdpwd = hashlib.sha1(pwd).hexdigest()
@@ -70,3 +86,7 @@ with open("./pwdlist.txt", 'r') as f:
             continue
     print "It took " + str(time.time()-start_time) + " seconds long and " + str(counter) + " many tries to find the salted password " + pwd + "\n"
 ```
+
+
+
+## How to run and homework outputs
