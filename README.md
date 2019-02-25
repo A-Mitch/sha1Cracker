@@ -8,9 +8,9 @@ This is a program that cracks SHA1 hashes.
 This app is a program that cracks SHA1 hashes as well as salted word hashes.  written in Python 2.7 that 
 
 ## ♻️ Project facts
-* 1. It was written in Python 2.7
-* 2. It was written by Alexander Mitchell for Blockchain assignment 2
-* *
+* It was written in Python 2.7
+* It was written by Alexander Mitchell for Blockchain assignment 2
+* 
 
 ## 🏎 Getting up and Running
 
