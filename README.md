@@ -14,7 +14,7 @@ This app is a program that cracks SHA1 hashes as well as salted word hashes.  wr
 ## 🏎 Getting up and Running
 
 > You can access this program by cloning the repo to your local machine via SSH.
-**IMPORTANT**
+**IMPORTANT:**
 > Your sysargv[1] is the input hash and your sysargv[2] is your salt term.
 
 ## Project components
@@ -87,6 +87,17 @@ with open("./pwdlist.txt", 'r') as f:
     print "It took " + str(time.time()-start_time) + " seconds long and " + str(counter) + " many tries to find the salted password " + pwd + "\n"
 ```
 
-
-
 ## How to run and homework outputs
+
+You run the code by either:
+1. Putting in the file name and the hash that you want to solve.
+```bash
+    python amitchell_assignment2.py <YOUR INPUT HASH>
+```
+
+Or
+
+2. Putting in the file name and the hash that you want to solve and your hash.
+```bash
+    python amitchell_assignment2.py <YOUR INPUT HASH> <YOUR SALT TERM>
+```
