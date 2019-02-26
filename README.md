@@ -102,5 +102,11 @@ with open("./pwdlist.txt", 'r') as f:
 ```
 
 
-
 ## Homework outputs
+
+1. Solution to a
+![A Solution](./solutions/prob1.png)
+
+2. Solution to b
+
+3. Solution to c
