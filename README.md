@@ -108,5 +108,7 @@ with open("./pwdlist.txt", 'r') as f:
 ![A Solution](./solutions/prob1.png)
 
 2. Solution to b
+![A Solution](./solutions/prob2.png)
 
 3. Solution to c
+![A Solution](./solutions/prob3.png)
