@@ -1,19 +1,17 @@
 # sha1Cracker
-This is a program that cracks SHA1 hashes.
-
-
 
 ## 🔨 Sha1Cracker 
 
-This app is a program that cracks SHA1 hashes as well as salted word hashes.  written in Python 2.7 that 
+This is a program that cracks SHA1 hashes as well as salted word hashes. 
 
 ## 💯 Project facts
-* It was written in Python 2.7
-* It was written by Alexander Mitchell for Blockchain assignment 2
+* It was written in Python 2.7.
+* Developed by Alexander Mitchell for Blockchain assignment 2.
 
 ## 🏎 Getting up and Running
 
 > You can access this program by cloning the repo to your local machine via SSH.
+<!-- -->
 **IMPORTANT:**
 > Your sysargv[1] is the input hash and your sysargv[2] is your salt term.
 
@@ -30,6 +28,17 @@ Or
 ```bash
 $ python amitchell_assignment2.py <YOUR INPUT HASH> <YOUR SALT TERM>
 ```
+
+## Homework outputs
+
+1. Solution to a
+![A Solution](./solutions/prob1.png)
+
+2. Solution to b
+![A Solution](./solutions/prob2.png)
+
+3. Solution to c
+![A Solution](./solutions/prob3.png)
 
 ## Project components
 
@@ -101,14 +110,3 @@ with open("./pwdlist.txt", 'r') as f:
     print "It took " + str(time.time()-start_time) + " seconds long and " + str(counter) + " many tries to find the salted password " + pwd + "\n"
 ```
 
-
-## Homework outputs
-
-1. Solution to a
-![A Solution](./solutions/prob1.png)
-
-2. Solution to b
-![A Solution](./solutions/prob2.png)
-
-3. Solution to c
-![A Solution](./solutions/prob3.png)
