@@ -12,10 +12,10 @@ This is a program that cracks SHA1 hashes as well as salted word hashes.
 
 > You can access this program by cloning the repo to your local machine via SSH.
 <!-- -->
-**IMPORTANT:**
+❗️**IMPORTANT:**
 > Your sysargv[1] is the input hash and your sysargv[2] is your salt term.
 
-### How to run
+### 🤔How to run
 You run the code by either:
 1. Typing python, the file name and the hash that you want to solve in your terminal.
 ```bash
@@ -29,7 +29,7 @@ Or
 $ python amitchell_assignment2.py <YOUR INPUT HASH> <YOUR SALT TERM>
 ```
 
-## Homework outputs
+## 📝 Homework outputs
 
 1. Solution to a
 ![A Solution](./solutions/prob1.png)
@@ -40,9 +40,9 @@ $ python amitchell_assignment2.py <YOUR INPUT HASH> <YOUR SALT TERM>
 3. Solution to c
 ![A Solution](./solutions/prob3.png)
 
-## Project components
+## 🔑 Project components
 
-### Libraries used (and how to import them)
+### 📚 Libraries used (and how to import them)
 
 This program uses three libraries...
 1. hashlib: For all of our hash functions
@@ -56,7 +56,7 @@ import sys
 import time
 ```
 
-### Breaking down the code
+### 🔩 Breaking down the code
 1. Establish variables that track the time and amount of times it takes to find the solved hash.
 
 ```python
